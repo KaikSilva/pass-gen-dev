@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+  font-family: "Source Code Pro", monospace;
+}
+html {
+  height: 100%;
+}
+
+html:not(.dark) body {
+  background: #caedf7;
+}
+
+html.dark .displayResultWords {
+  color: #fff;
+}
+
+html.dark .footer {
+  color: #fff;
+}
+
+html.dark body {
+  background: #010409;
+  color: rgba(235, 235, 245, 0.6);
+}
+
+html.dark textarea.form-control {
+  background: rgba(13, 17, 23, 0.631372549);
+  border-color: rgba(48, 54, 61, 0.3215686275);
+  color: #fff !important;
+}
+
+html.dark textarea.form-control:focus,
+html.dark textarea.form-control:hover {
+  background-color: rgba(13, 17, 23, 0.631372549);
+  border-color: rgba(48, 54, 61, 0.3215686275);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin-top: 120px;
+}
+
+.app-header {
+  padding: 12px 12px 0px 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#ThemeButton {
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.form-control{
+    width: 100%;
+    padding: 14px;
+
+}
+
+.list-options{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label{
+  text-align: left;
+}
+
+.field-input-generated{
+    width: 100%;
+    height: fit-content;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.field-input-generated__input{
+  border: none;
+  background: none;
+  width: 100%;
+  font-size: 2.15rem;
+  outline: 0;
+  padding-right: 80px;
+  user-select: none;
+}
+
+.list-actions{
+    right: 0px;
+    top: 30px;
+    margin-right: 15px;
+}
+
+.list-actions__button{
+  transition: color 0.2s ease-in-out;
+}
+.list-actions__button:hover{
+  color: #1156a9;
+}

@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap);
+* {
+  font-family: "Source Code Pro", monospace;
+}
+html {
+  height: 100%;
+}
+html:not(.dark) body {
+  background: #dbdbdb;
+}
+html.dark .displayResultWords,
+html.dark .footer {
+  color: #fff;
+}
+html.dark body {
+  background: #010409;
+  color: rgba(235, 235, 245, 0.6);
+}
+html.dark textarea.form-control {
+  background: rgba(13, 17, 23, 0.631372549);
+  border-color: rgba(48, 54, 61, 0.3215686275);
+  color: #fff !important;
+}
+html.dark textarea.form-control:focus,
+html.dark textarea.form-control:hover {
+  background-color: rgba(13, 17, 23, 0.631372549);
+  border-color: rgba(48, 54, 61, 0.3215686275);
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin-top: 120px;
+}
+.app-header {
+  padding: 12px 12px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+#ThemeButton {
+  cursor: pointer;
+  user-select: none;
+}
